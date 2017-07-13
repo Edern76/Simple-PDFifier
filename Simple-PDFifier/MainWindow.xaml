@@ -7,6 +7,49 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Menu x:Name="menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="525">
+            <MenuItem Header = "File">
+                <MenuItem Header = "New" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+
+                <MenuItem Header = "Open" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+
+                <MenuItem Header = "Exit" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "exitProgram"/>
+            </MenuItem>
+
+            <MenuItem Header = "Edit">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+            </MenuItem>
+
+            <MenuItem Header = "View">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+                   Click = "MenuItem_Click"/>
+            </MenuItem>
+
+        </Menu>
+        <TextBlock x:Name="txt1"  TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" RenderTransformOrigin="0.498,2.343" Margin="159,0,158.4,270.8" Height="16" VerticalAlignment="Bottom"/>
+        <Button x:Name="button" Content="PDFify !" Margin="159,265,284.4,0" VerticalAlignment="Top" Click="processFile"/>
+        <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Left" Margin="285,265,0,0" VerticalAlignment="Top" Width="75" Click="exitProgram"/>
+        <TextBox x:Name="inputPath" HorizontalAlignment="Left" Height="23" Margin="10,117,0,0" TextWrapping="NoWrap" Text="Enter image path here or click Browse" VerticalAlignment="Top" Width="396"/>
+        <TextBox x:Name="outputPath" HorizontalAlignment="Left" Height="23" Margin="10,197,0,0" TextWrapping="NoWrap" Text="Enter pdf output path here or click Browse" VerticalAlignment="Top" Width="396"/>
+        <Button x:Name="inputBrowse" Content="Browse..." HorizontalAlignment="Left" Margin="423,117,0,0" VerticalAlignment="Top" Width="75" Click="browseInput"/>
+        <Button x:Name="outputBrowse" Content="Browse..." HorizontalAlignment="Left" Margin="423,201,0,0" VerticalAlignment="Top" Width="75" Click="browseOutput"/>
+        <TextBlock x:Name="txt1_Copy"  TextWrapping="Wrap" Text="Made by Gawein LE GOFF" TextAlignment="Center" RenderTransformOrigin="0.498,2.343" Margin="89,0,89.4,234.8" Height="16" VerticalAlignment="Bottom"/>
+
     </Grid>
 </Window>
