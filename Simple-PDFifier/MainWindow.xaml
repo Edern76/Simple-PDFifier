@@ -5,40 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simple_PDFifier"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Simple PDFifier" Height="350" Width="525">
     <Grid>
         <Menu x:Name="menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="525">
             <MenuItem Header = "File">
-                <MenuItem Header = "New" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
 
-                <MenuItem Header = "Open" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-
-                <Separator HorizontalAlignment = "Left" Width = "140" />
 
                 <MenuItem Header = "Exit" HorizontalAlignment = "Left" Width = "140" 
                    Click = "exitProgram"/>
             </MenuItem>
 
-            <MenuItem Header = "Edit">
-                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-                <Separator HorizontalAlignment = "Left" Width = "140" />
-                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-            </MenuItem>
-
-            <MenuItem Header = "View">
-                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click" />
-                <Separator HorizontalAlignment = "Left" Width = "140" />
-                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
-                   Click = "MenuItem_Click"/>
+            <MenuItem Header = "Help">
+                <MenuItem Header = "GitHub Repository" HorizontalAlignment = "Left" Width = "190" 
+                   Click = "showRepo" />
+                <MenuItem Header = "About..." HorizontalAlignment = "Left" Width = "140" 
+                   Click = "showAbout" />
             </MenuItem>
 
         </Menu>

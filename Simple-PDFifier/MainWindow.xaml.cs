@@ -81,7 +81,7 @@ namespace Simple_PDFifier
             }
             catch (Exception ex)
             {
-                string toDisplay = ex.ToString();
+                string toDisplay = ex.Message;
                 MessageBox.Show(toDisplay, "Error !");
                 return;
             }
@@ -120,7 +120,7 @@ namespace Simple_PDFifier
             }
             catch (Exception ex)
             {
-                string toDisplay = ex.ToString();
+                string toDisplay = ex.Message;
                 MessageBox.Show(toDisplay, "Error !");
                 return;
             }
@@ -175,6 +175,24 @@ namespace Simple_PDFifier
             if (selector.ShowDialog() == true)
             {
                 outputPath.Text = selector.FileName;
+            }
+        }
+
+        private void showAbout(object sender, RoutedEventArgs e)
+        {
+            About aboutWindow = new About();
+            aboutWindow.Show();
+        }
+
+        private void showRepo(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://github.com/Edern76/Simple-PDFifier");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

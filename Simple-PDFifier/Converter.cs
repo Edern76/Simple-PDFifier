@@ -9,6 +9,7 @@ using System.Windows;
 using iTextSharp;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.Windows.Controls;
 
 namespace Simple_PDFifier
 {
@@ -57,11 +58,12 @@ namespace Simple_PDFifier
             }
             catch (Exception ex)
             {
-                string toDisplay = ex.ToString();
+                string toDisplay = ex.Message;
                 MessageBox.Show(toDisplay, "Error !");
                 return;
             }
         }
+
     }
 
 
