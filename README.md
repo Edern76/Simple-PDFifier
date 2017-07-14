@@ -12,6 +12,10 @@ Requires a Windows operating system with .NET Framework 4.5.2. Won't run on Linu
 
 Also requires iTextSharp 5.5.1.1 if running from source
 
+# Downloads
+
+See the [releases](https://github.com/Edern76/Simple-PDFifier/releases) page.
+
 # License
 
 MIT License, see the LICENSE file for more information.
