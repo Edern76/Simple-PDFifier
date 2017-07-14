@@ -150,6 +150,7 @@ namespace Simple_PDFifier
         private string getPath()
         {
             OpenFileDialog selector = new OpenFileDialog();
+            selector.Filter = "Image files (*.bmp, *.gif, *.jpeg, *.png, *.tiff)|*.bmp; *.gif; *.jpeg; *.png; *.tiff; *.jpg|Bitmap files (*.bmp)|*.bmp|Graphical Interchange Format (*.gif)|*.gif|Joint Photographic Experts Group (*.jpeg, *.jpg)|*.jpeg; *.jpg|Portable Network Graphics (*.png)|*.png|Tagged Image File Format (*.tiff)|*.tiff";
             if (selector.ShowDialog() == true)
             {
                 return selector.FileName;
@@ -172,6 +173,7 @@ namespace Simple_PDFifier
             SaveFileDialog selector = new SaveFileDialog();
             selector.AddExtension = true;
             selector.DefaultExt = ".pdf";
+            selector.Filter = "Portable Document Format (*.pdf) | *.pdf";
             if (selector.ShowDialog() == true)
             {
                 outputPath.Text = selector.FileName;
