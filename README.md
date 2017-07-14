@@ -2,7 +2,7 @@
 A simple application written in C# with WPF and iTextSharp to convert an image file to PDF
 
 # Usage
-Input the path of the image to convert into the first box and the path to where you want to save the output into the second box then press "Pdfify!"
+Input the path of the image to convert into the first box and the path to where you want to save the output into the second box then press "PDFify!"
 
 Supports PNG, JPG/JPEG, GIF, TIFF and BMP formats as output
 
